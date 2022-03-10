@@ -10,6 +10,13 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.container {
+  padding: 0 50px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -17,9 +24,11 @@ body {
 /* Header */
 
 header {
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   height: 100px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -56,13 +65,19 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   flex: 1;
+  width: 100%;
   max-width: 900px;
 }
 
 #hero {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
+}
+
+#hero div {
+  flex: 1;
 }
 
 #hero div h1 {
@@ -79,6 +94,8 @@ main {
 }
 
 #hero > p {
+  flex: 1;
+  min-width: 300px;
   background-image: url("python.png");
   background-size: contain;
   background-position: center;
@@ -89,10 +106,6 @@ main {
 
   font-size: 10px;
   line-height: 1.5;
-
-  flex-basis: 450px;
-  flex-grow: 0;
-  flex-shrink: 0;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -106,7 +119,7 @@ main {
   text-decoration: none;
   padding: 10px;
   border: 2px solid white;
-  margin: 0 20px;
+  margin-right: 20px;
 }
 
 #buttons a:hover {
@@ -117,11 +130,12 @@ main {
 /* Resume */
 
 #tab-links {
+  margin: 20px 0;
   text-align: center;
 }
 
 #tab-links a {
-  margin: 0 40px;
+  margin-right: 20px;
 }
 
 .active {
@@ -137,7 +151,6 @@ main {
   display: none;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 40px 0;
 }
 
 .project {
@@ -160,18 +173,17 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-}
-
-#skills > p {
-  padding: 40px 50px;
+  gap: 40px;
 }
 
 #skills > div {
+  flex-wrap: wrap;
   display: flex;
   gap: 20px;
 }
 
 .skill-box {
+  flex: 1;
   padding: 20px;
   border: 2px dotted white;
 }
@@ -242,4 +254,10 @@ footer {
   width: 100%;
   background-color: red;
   margin-top: 40px;
+}
+
+@media only screen and (max-width: 700px) {
+  #hero > p {
+    display: none;
+  }
 }
