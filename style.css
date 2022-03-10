@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Consolas";
+}
+
+body {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header */
+
+header {
+  max-width: 800px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 5px;
+}
+
+#logo #logo-part1 {
+  flex-basis: 20px;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  font-size: 48px;
+  color: red;
+}
+
+#logo #logo-part2 {
+  flex-basis: 120px;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  font-size: 16px;
+  line-height: 0.8;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+  max-width: 900px;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#hero div h1 {
+  font-size: 56px;
+}
+
+#hero div h2 {
+  margin-top: 20px;
+}
+
+#hero div p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#hero > p {
+  background-image: url("python.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  font-size: 10px;
+  line-height: 1.5;
+
+  flex-basis: 450px;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#buttons a {
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid white;
+  margin: 0 20px;
+}
+
+#buttons a:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+/* Resume */
+
+#tab-links {
+  text-align: center;
+}
+
+#tab-links a {
+  margin: 0 40px;
+}
+
+.active {
+  color: red;
+}
+
+.active:before {
+  content: "🡆 ";
+}
+
+#experience {
+  flex: 1;
+  display: none;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 40px 0;
+}
+
+.project {
+  width: 100%;
+  padding: 20px;
+  border: 2px dotted white;
+  margin: 20px 0;
+}
+
+.project p {
+  padding: 10px 0;
+}
+
+.project ul {
+  padding: 10px 30px;
+}
+
+#skills {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#skills > p {
+  padding: 40px 50px;
+}
+
+#skills > div {
+  display: flex;
+  gap: 20px;
+}
+
+.skill-box {
+  padding: 20px;
+  border: 2px dotted white;
+}
+
+.skill-box ul {
+  padding: 10px 30px;
+}
+
+.skill-box li {
+  padding: 10px 0px;
+}
+
+/* Footer */
+
+footer {
+  height: 20px;
+  width: 100%;
+  background-color: red;
+}
