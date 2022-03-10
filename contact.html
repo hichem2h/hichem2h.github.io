@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hichem Ahmed</title>
   </head>
@@ -19,7 +23,70 @@
         <a href="contact.html">Contact Me</a>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div id="contact-info">
+        <p>You can reach me on one of these</p>
+        <a target="_blank" href="mailto:hichem2h@gmail.com"
+          ><i class="fa fa-at"></i>Email: hichem2h@gmail.com</a
+        >
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/hichem-ahmed-34ab50149/"
+        >
+          <i class="fa fa-linkedin"></i>Linkedin:
+          https://www.linkedin.com/in/hichem-ahmed-34ab50149/
+        </a>
+        <a target="_blank" href="https://wa.me/+213795947693"
+          ><i class="fa fa-whatsapp"></i>Whatsapp: +213795947693</a
+        >
+        <a target="_blank" href="https://github.com/hichem2h"
+          ><i class="fa fa-github"></i>Github: https://github.com/hichem2h</a
+        >
+        <p>Or use this contact form</p>
+      </div>
+      <div>
+        <p id="contact-form-status"></p>
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/xayvjzge"
+          method="POST"
+        >
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
+
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Your email.."
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </main>
     <footer></footer>
 
     <script src="index.js"></script>
